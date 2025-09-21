@@ -2,7 +2,7 @@ body{
     font-family: arial;
     display: flex;
     justify-content: center;
-    background: url("c:/Users/alvin/Documents/New%20folder/joshua-harris--rkW0aKhOMA-unsplash.jpg");
+    background: url("https://images.unsplash.com/photo-1518931479438-62470470be9a?q=80&w=1412&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
     background-position: 980px;
     background-repeat: repeat;
     background-size: cover;
@@ -18,7 +18,7 @@ body{
         padding: 0 50px 50px 50px;
         margin-top: 10px;
         border-radius: 10px;
-        background: url("c:/Users/alvin/Documents/New%20folder/background.jpg");
+        background: url("https://w0.peakpx.com/wallpaper/112/647/HD-wallpaper-pink-pastel-petal-rose-pink-love-cute-birds-girly.jpg");
         background-size: cover;
       }
 .container1{
