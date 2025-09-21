@@ -1,0 +1,176 @@
+body{
+    font-family: arial;
+    display: flex;
+    justify-content: center;
+    background: url("c:/Users/alvin/Documents/New%20folder/joshua-harris--rkW0aKhOMA-unsplash.jpg");
+    background-position: 980px;
+    background-repeat: repeat;
+    background-size: cover;
+}
+.container{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 900px;
+        width: 600px;
+        border:  solid 2px rgba(128, 128, 128, 0.322);
+        padding: 0 50px 50px 50px;
+        margin-top: 10px;
+        border-radius: 10px;
+        background: url("c:/Users/alvin/Documents/New%20folder/background.jpg");
+        background-size: cover;
+      }
+.container1{
+    height: max-content;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    gap: 100px;
+    margin-top: 80px;
+}
+.container2{
+        height: 90%;
+        width: 90%;
+        border:  solid 1px rgba(138, 83, 43, 0.199);
+        border-radius: 20px;
+        padding: 10px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        
+      }
+img{
+    height: 150px;
+    width: 150px;
+    border-radius: 50%;
+}
+.logo{
+    width: 90px;
+    height: 90px;
+}
+.tarif{
+    width: 90%;
+    height: 700px;
+    margin: 30px 10px;
+}
+.bouquets{
+    width: max-content;
+    padding: 5px;
+    text-align:justify;
+    line-height:25px;
+    color: rgb(128, 61, 72);
+    font-weight: bold;
+    position: relative;
+    left: 160px;
+}
+.rose_mixte{
+    position: relative;
+    bottom: 0;
+    color: rgb(255, 230, 0);
+    font-size: 16px;
+    font-weight: bolder;
+    right: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    gap: 30px;
+}
+.images{
+    position: relative;
+    bottom: 670px;
+    right: 260px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    gap: 30px;
+}
+.images2{
+    position: absolute;
+    top: 350px;
+    left: 1140px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    gap: 30px;
+}
+.packet-img{
+    width: 150px;
+    height: 150px;
+    position: absolute;
+    top: 790px;
+    left: 1050px;
+}
+.packet-img img{
+    border-radius: 10px;
+}
+@media (max-width: 900px) {
+    .container {
+        width: 95vw;
+        height: auto;
+        padding: 10px 10px 30px 10px;
+    }
+    .container1 {
+        flex-direction: column;
+        gap: 40px;
+        margin-top: 40px;
+        align-items: center;
+    }
+    .bouquets {
+        left: 0;
+        width: 100%;
+        font-size: 1rem;
+        text-align: left;
+    }
+    .rose_mixte {
+        right: 0;
+        gap: 15px;
+        font-size: 1rem;
+    }
+    .images {
+        right: 0;
+        bottom: 0;
+        gap: 15px;
+    }
+    .packet-img {
+        position: static;
+        width: 100%;
+        height: auto;
+        margin: 20px 0;
+    }
+    .packet-img img {
+        width: 100%;
+        height: auto;
+        border-radius: 10px;
+    }
+}
+
+@media (max-width: 600px) {
+    body {
+        padding: 0;
+        background-position: center;
+    }
+    .container {
+        width: 100vw;
+        min-width: 0;
+        padding: 5px;
+        border-radius: 0;
+    }
+    .container2 {
+        width: 100%;
+        padding: 5px;
+        border-radius: 10px;
+    }
+    img, .logo {
+        width: 80px;
+        height: 80px;
+    }
+    .tarif {
+        width: 100%;
+        height: auto;
+        margin: 10px 0;
+    }
+}
