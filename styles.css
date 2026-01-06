@@ -109,8 +109,8 @@ img{
 }
 @media (max-width: 900px) {
     .container {
-        width: 95vw;
-        height: auto;
+        width: 195px;
+        height: 400px;
         padding: 10px 10px 30px 10px;
     }
     .container1 {
