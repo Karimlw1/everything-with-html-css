@@ -3,7 +3,7 @@ body{
     display: flex;
     justify-content: center;
     background: url("https://images.unsplash.com/photo-1518931479438-62470470be9a?q=80&w=1412&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
-    background-position: 980px;
+    background-position: 900px;
     background-repeat: repeat;
     background-size: cover;
 }
@@ -13,37 +13,54 @@ body{
         justify-content: center;
         align-items: center;
         height: 900px;
-        width: 600px;
+        width: max-content;
         border:  solid 2px rgba(128, 128, 128, 0.322);
-        padding: 0 50px 50px 50px;
         margin-top: 10px;
+        padding: 10px;
         border-radius: 10px;
         background: url("images/background.jpg");
         background-size: cover;
+        cursor: default;
+        user-select: none;
       }
+strong  a{
+    color: rgb(105, 36, 36);
+    text-decoration: underline;
+    cursor: pointer;
+    transition: all ease-in-out 1s;
+}
+strong a:hover{
+    color: rgb(21, 102, 35);
+    text-decoration: none;
+    background-color:rgb(214, 214, 214);
+    padding: 3px;
+    border-radius: 5px;
+
+}
 .container1{
     height: max-content;
     display: flex;
     flex-direction: row;
     justify-content: space-around;
-    gap: 100px;
-    margin-top: 80px;
 }
 .container2{
-        height: 90%;
+        height: 60%;
         width: 90%;
-        border:  solid 1px rgba(138, 83, 43, 0.199);
-        border-radius: 20px;
-        padding: 10px;
+        border:  solid 1px rgba(85, 41, 11, 0.116);
+        border-bottom: none;
+        border-radius: 20px 20px 2px 2px;
+        padding: 30px;
         display: flex;
-        flex-direction: column;
-        align-items: center;
+        flex-direction: row;
+        border-bottom: none;
         
       }
 img{
     height: 150px;
     width: 150px;
     border-radius: 50%;
+    user-select: none;
+    -webkit-user-drag: none;
 }
 .logo{
     width: 90px;
@@ -51,8 +68,17 @@ img{
 }
 .tarif{
     width: 90%;
-    height: 700px;
+    height: auto;
     margin: 30px 10px;
+}
+h1{ 
+    font-weight: bolder;
+    text-align: center;
+    text-decoration: underline;
+    font-family: 'Courier New', Courier, monospace;
+    color: rgb(138, 0, 23);
+    font-size: 40px;
+   
 }
 .bouquets{
     width: max-content;
@@ -62,12 +88,17 @@ img{
     color: rgb(128, 61, 72);
     font-weight: bold;
     position: relative;
-    left: 160px;
+    left: 20%;
+}
+h2{
+    text-align: center;
+    color: brown;
+    font-weight: bolder;
+    text-decoration: underline;
 }
 .rose_mixte{
-    position: relative;
-    bottom: 0;
-    color: rgb(255, 230, 0);
+   
+    color: rgba(201, 182, 12, 0.938);
     font-size: 16px;
     font-weight: bolder;
     right: 100px;
@@ -78,9 +109,7 @@ img{
     gap: 30px;
 }
 .images{
-    position: relative;
-    bottom: 670px;
-    right: 260px;
+   
     display: flex;
     flex-direction: column;
     justify-content: space-around;
@@ -88,12 +117,10 @@ img{
     gap: 30px;
 }
 .images2{
-    position: absolute;
-    top: 350px;
-    left: 1140px;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
+    margin-top: 15%;
     align-items: center;
     gap: 30px;
 }
@@ -109,8 +136,8 @@ img{
 }
 @media (max-width: 900px) {
     .container {
-        width: 195px;
-        height: 400px;
+        width: max-content;
+        height: max-content;
         padding: 10px 10px 30px 10px;
     }
     .container1 {
@@ -147,30 +174,117 @@ img{
         border-radius: 10px;
     }
 }
-
-@media (max-width: 600px) {
-    body {
-        padding: 0;
-        background-position: center;
-    }
+@media (max-width: 700px) {
     .container {
-        width: 100vw;
-        min-width: 0;
-        padding: 5px;
-        border-radius: 0;
+        width: 80%;
+        height: 800px;
+        padding: 10px;
+    }
+    .container1 {
+        flex-direction: column;
+        height: max-content;
+        width: 90%;
+        padding: 10px;
+        gap: 20px;
     }
     .container2 {
-        width: 100%;
-        padding: 5px;
-        border-radius: 10px;
+        flex-direction: row;
+        height: max-content;
+        width: 90%;
+        padding: 10px;
+        gap: 20px;
     }
-    img, .logo {
-        width: 80px;
-        height: 80px;
-    }
-    .tarif {
-        width: 100%;
-        height: auto;
-        margin: 10px 0;
-    }
+.images{
+   
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    gap: 30px;
+    height: 250px;
+}    
+img{
+    height: 100px;
+    width: 100px;
 }
+.tarif{
+    width: 100%;
+    height: 500px;
+    margin: 10px 0;
+
+}
+h1{
+    font-size: 1.1rem;
+  
+}
+.bouquets{
+    left: 0;
+    width: 100%;
+    font-size: 0.8rem;
+    line-height: normal;
+
+}
+.rose_mixte{
+    right: 0;
+    font-size: 0.80rem;
+    gap: 10px;
+}
+}
+@media (max-width: 500px) {
+     .container {
+        margin-top: 50px;
+        width: 80%;
+        height: 800px;
+        padding: 20px;
+    }
+    .container1 {
+        flex-direction: column;
+        height: max-content;
+        width: 90%;
+        padding: 10px;
+        gap: 20px;
+    }
+    .container2 {
+        flex-direction: row;
+        height: max-content;
+        width: 90%;
+        padding: 10px;
+        gap: 20px;
+    }
+.images{
+   
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    gap: 60px;
+    height: 40px;
+}    
+img{
+    height: 70px;
+    width: 70px;
+}
+.tarif{
+    width: 100%;
+    height: 500px;
+    margin: 10px 0;
+
+}
+h1{
+    font-size: 1.1rem;
+  
+}
+.bouquets{
+    left: 0;
+    width: 100%;
+    font-size: 0.8rem;
+    line-height: normal;
+
+}
+.rose_mixte{
+    right: 0;
+    font-size: 0.70rem;
+    gap: 10px;
+}
+}
+
