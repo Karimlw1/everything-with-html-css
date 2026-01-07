@@ -5,6 +5,38 @@ body{
     background-repeat: repeat;
     background-size: cover;
 }
+
+.welcome-box {
+    place-self: center;
+    opacity: 0;
+    transform: translateY(20px);
+    background: rgba(202, 174, 174, 0.473);
+    padding: 2rem 3rem;
+    border-radius: 12px;
+    box-shadow: 0 6px 18px rgba(0,0,0,0.08);
+    transition: opacity .8s ease, transform 4s ease;
+    max-width: 480px;
+    text-align: center;
+    margin-top: 200px;
+}
+
+.welcome-box.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+h3 {
+    margin: 0 0 .5rem;
+    font-weight: 600;
+    font-size: 1.6rem;
+}
+
+p {
+    margin: 0;
+    font-size: .95rem;
+    color: #444;
+}
+
 .container{
         display: flex;
         flex-direction: column;
@@ -20,6 +52,7 @@ body{
         background-size: cover;
         cursor: default;
         user-select: none;
+        place-self: center;
       }
 strong  a{
     color: rgb(105, 36, 36);
@@ -314,7 +347,7 @@ b{
 }
 
 @keyframes fadeUp {
-  from {opacity: 0; transform: translateY(3000px); }
+  from {opacity: 0; transform: translateY(500px); }
   to { opacity: 1; transform: translateY(0); }
 }
 
