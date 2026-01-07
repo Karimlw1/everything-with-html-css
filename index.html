@@ -12,7 +12,10 @@
     <style></style>
   </head>
   <body>
-
+    <div class="welcome-box" id="welcome">
+      <h3>Welcome</h3>
+      <p>We sell flours and we can develop.</p>
+    </div>
 
     <div class="container">
       <div class="container1">
@@ -93,5 +96,19 @@
         </div>
       </div>
     </div>
+    <script>
+      window.addEventListener("load", () => {
+        const box = document.getElementById("welcome");
+        box.classList.add("visible");
+      });
+      window.addEventListener("scroll", () => {
+        const box = document.getElementById("welcome");
+        if (window.scrollY >= 200) {
+          box.classList.remove("visible");
+        } else {
+          box.classList.add("visible");
+        }
+      });
+    </script>
   </body>
 </html>
