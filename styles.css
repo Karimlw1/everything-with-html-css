@@ -232,34 +232,47 @@ h1{
 }
 @media (max-width: 500px) {
      .container {
-        margin-top: 50px;
+    
+        margin-top: 100px;
         width: 80%;
-        height: 800px;
-        padding: 20px;
+        height: max-content;
+        padding: 0 20px 0 20px;
     }
     .container1 {
         flex-direction: column;
         height: max-content;
         width: 90%;
         padding: 10px;
-        gap: 20px;
+        gap: 0;
     }
     .container2 {
         flex-direction: row;
-        height: max-content;
+        height: 400px;
         width: 90%;
         padding: 10px;
-        gap: 20px;
+        gap: 10px;
     }
-.images{
-   
+    .contact{
+        font-size: 0.8rem;
+
+    }
+.images{   
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    gap: 40px;
+    height: 0;
+}   
+.images2{
     display: flex;
     flex-direction: column;
     justify-content: space-around;
+    margin-top: 5%;
     align-items: center;
     gap: 60px;
     height: 40px;
-}    
+} 
 img{
     height: 70px;
     width: 70px;
@@ -271,20 +284,28 @@ img{
 
 }
 h1{
-    font-size: 1.1rem;
+    font-size: 0.8rem;
   
+}
+h2{
+    font-size: 0.6rem;
 }
 .bouquets{
     left: 0;
     width: 100%;
-    font-size: 0.8rem;
+    font-size: 0.7rem;
     line-height: normal;
 
 }
 .rose_mixte{
     right: 0;
-    font-size: 0.70rem;
+    font-size: 0.7rem;
     gap: 10px;
+    color: rgba(107, 52, 42, 0.87);
+}
+b{
+    background-color: rgba(255, 255, 255, 0.452);
+    border-radius: 5px;
 }
 }
 
