@@ -10,10 +10,11 @@ body{
     place-self: center;
     opacity: 0;
     transform: translateY(20px);
-    background: rgba(202, 174, 174, 0.473);
+    background: rgba(165, 11, 11, 0.767);
     padding: 2rem 3rem;
     border-radius: 12px;
-    box-shadow: 0 6px 18px rgba(0,0,0,0.08);
+    box-shadow: 0 6px 18px rgba(0,0,0,0.8);
+    color: rgb(30, 63, 30);
     transition: opacity .8s ease, transform 4s ease;
     max-width: 480px;
     text-align: center;
