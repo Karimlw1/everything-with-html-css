@@ -30,12 +30,13 @@ h3 {
     margin: 0 0 .5rem;
     font-weight: 600;
     font-size: 1.6rem;
+    
 }
 
 p {
     margin: 0;
     font-size: .95rem;
-    color: #444;
+    color: grey;
 }
 
 .container{
