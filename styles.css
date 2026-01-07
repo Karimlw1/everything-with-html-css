@@ -95,6 +95,7 @@ i{
         width: max-content;
         border:  solid 2px rgba(128, 128, 128, 0.322);
         margin-top: 10px;
+        margin-left: 20px;
         padding: 10px;
         border-radius: 10px;
         background: url("images/background.jpg");
