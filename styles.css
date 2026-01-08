@@ -261,7 +261,6 @@ section{
 section div{
     width: max-content;
     height: max-content;
-    border-radius: 10px;
 }
 section div img{
     height: 350px;
