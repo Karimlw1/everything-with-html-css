@@ -254,6 +254,7 @@ section{
     grid-template-rows: repeat(auto-fit, minmax(200px, 1fr));
     gap: 1rem;
     margin-top: 50px;
+    width: max-content;
 }
 section div{
     width: max-content;
