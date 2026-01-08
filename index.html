@@ -129,8 +129,11 @@
       });
       window.addEventListener("scroll", () => {
         const box = document.querySelectorAll(".welcome-box")[0];
-        if (window.scrollY >= 50) {
+        if (window.scrollY >= 100) {
           box.classList.remove("visible");
+        }
+        if (window.scrollY < 200) {
+          box.classList.add("visible");
         } else {
           box.classList.add("visible");
         }
