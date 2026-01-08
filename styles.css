@@ -210,7 +210,6 @@ h2{
     gap: 30px;
 }
 .images{
-   
     display: flex;
     flex-direction: column;
     justify-content: space-around;
@@ -251,6 +250,7 @@ h2{
 
 section{
     display: grid;
+    justify-content: center;
     gap: 1rem;
     --max: 6;
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
