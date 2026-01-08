@@ -250,13 +250,10 @@ h2{
 }
 
 section{
-    display: flex;
-    flex: auto;
-    align-content: space-around;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1rem;
     margin-top: 50px;
-    gap: 50px;
-    justify-content: center;
-    flex-direction: row;
 }
 section div{
     width: max-content;
@@ -270,6 +267,17 @@ section div img{
 section div video{
     height: 300px;
     width: 200px;
+}
+@media (min-width: calc(200px * 6)) {
+  .container {
+    grid-template-columns: repeat(var(6), 1fr);
+  }
+}
+
+@media (max-width: calc(200px * 2)) {
+  .container {
+    grid-template-columns: repeat(2, 1fr);
+  }
 }
 
 @media (max-width: 900px) {
