@@ -248,6 +248,27 @@ h2{
   opacity: 0.85;
 }
 
+section{
+    display: flex;
+    flex: auto;
+    align-content: space-evenly;
+    gap: 10px;
+    justify-content: center;
+    flex-direction: column;
+}
+section div{
+    height: max-content;
+    border-radius: 10px;
+}
+section div img{
+    height: 250px;
+    width: 150px;
+}
+section div video{
+    height: 300px;
+    width: 200px;
+}
+
 @media (max-width: 900px) {
     .container {
         width: max-content;
