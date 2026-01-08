@@ -14,7 +14,7 @@ header{
     top: 0;
     left: 0;
     right: 0;
-    background: url("https://raw.githubusercontent.com/Karimlw1/everything-with-html-css/main/images/flowers.jpg");
+    background: url("https://raw.githubusercontent.com/Karimlw1/alminaArt/main/images/flowers.jpg");
     border-radius: 0 0 20px 20px;
     background-position: center;
     background-size: cover;
@@ -65,7 +65,7 @@ header div button:hover{
     place-self: center;
     opacity: 0;
     transform: translateY(20px);
-    background: rgba(11, 11, 165, 0.767);
+    background: url("https://raw.githubusercontent.com/Karimlw1/alminaArt/main/images/habitbg.jpg");
     padding: 2rem 3rem;
     border-radius: 12px;
     box-shadow: 0 6px 18px rgba(0,0,0,0.8);
