@@ -21,8 +21,8 @@
       </div>
     </header>
     <div class="welcome-box" id="welcome">
-      <h3>Bienvenue Chez Nous</h3>
-      <p>
+      <h3 class="hero-title">Bienvenue Chez Nous</h3>
+      <p class="subtitle">
         Notre maison réunit tout ce qui fait plaisir: des
         <i>fleurs</i> fraîches, des <i>habits</i> soigneusement choisis, des
         <i>tenues personnalisées</i> et des <i>cadeaux</i> qui marquent les
@@ -43,12 +43,12 @@
           </h3>
           <p style="text-align: center; color: brown">
             Numero de telephone :
-            <strong><a href="https://wa.me/243976203805">+243 976 203 805</a></strong>
+            <strong><a href="whatsapp.com">+243 976 203 805</a></strong>
             <br />
             Numero de telephone :
-            <strong> <a href="https://wa.me/243853958848">+243 853 958 848</a></strong>
+            <strong> <a href="whatsapp.com">+243 853 958 848</a></strong>
             <br />
-            localisation <i style="color: "green" class="fa fa-map-marker"></i> : Kinshasa, ngaliema ,
+            localisation <i class="fa fa-map-marker"></i> : Kinshasa, ngaliema ,
             kin marche GB <br />
           </p>
         </div>
@@ -110,17 +110,37 @@
         </div>
       </div>
     </div>
+
+    <div class="welcome-box" id="welcome2">
+      <h3>Bienvenue Chez Nous</h3>
+      <p>
+        Notre maison réunit tout ce qui fait plaisir: des
+        <i>fleurs</i> fraîches, des <i>habits</i> soigneusement choisis, des
+        <i>tenues personnalisées</i> et des <i>cadeaux</i> qui marquent les
+        anniversaires. Ici, chaque détail compte, afin que vos intentions
+        deviennent des moments à offrir.
+      </p>
+    </div>
+
     <script>
       window.addEventListener("load", () => {
-        const box = document.getElementById("welcome");
+        const box = document.querySelectorAll(".welcome-box");
         box.classList.add("visible");
       });
       window.addEventListener("scroll", () => {
-        const box = document.getElementById("welcome");
-        if (window.scrollY >= 200) {
+        const box = document.querySelectorAll(".welcome-box")[0];
+        if (window.scrollY >= 100) {
           box.classList.remove("visible");
         } else {
           box.classList.add("visible");
+        }
+      });
+      window.addEventListener("scroll", () => {
+        const box = document.querySelectorAll(".welcome-box")[1];
+        if (window.scrollY >= 700) {
+          box.classList.add("visible");
+        } else {
+          box.classList.remove("visible");
         }
       });
     </script>
