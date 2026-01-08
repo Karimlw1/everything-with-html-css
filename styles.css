@@ -156,7 +156,7 @@ strong a:hover{
         border-bottom: none;
         
       }
-img{
+.container img{
     height: 150px;
     width: 150px;
     border-radius: 50%;
@@ -265,6 +265,7 @@ section div{
 section div img{
     height: 350px;
     width: 250px;
+    border-radius: 10px;
 }
 section div video{
     height: 300px;
