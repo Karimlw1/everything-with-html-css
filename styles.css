@@ -115,6 +115,7 @@ i{
         flex-direction: column;
         justify-content: center;
         align-items: center;
+        place-self: center;
         height: 900px;
         width: max-content;
         border:  solid 2px rgba(128, 128, 128, 0.322);
