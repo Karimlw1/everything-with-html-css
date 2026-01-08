@@ -251,7 +251,7 @@ h2{
 
 section{
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-template-rows: repeat(auto-fit, minmax(200px, 1fr));
     gap: 1rem;
     margin-top: 50px;
 }
@@ -261,7 +261,7 @@ section div{
 }
 section div img{
     height: 250px;
-    width: 150px;
+    width: 200px;
     border-radius: 10px;
 }
 section div video{
@@ -403,7 +403,7 @@ h1{
 
     }
     .welcome-box[id="welcome"]{
-        height: 150px;
+        height: max-content;
     }
 .images{   
     display: flex;
