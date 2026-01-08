@@ -255,15 +255,15 @@ section{
     align-content: space-evenly;
     gap: 10px;
     justify-content: center;
-    flex-direction: column;
+    flex-direction: row;
 }
 section div{
     height: max-content;
     border-radius: 10px;
 }
 section div img{
-    height: 250px;
-    width: 150px;
+    height: 350px;
+    width: 250px;
 }
 section div video{
     height: 300px;
