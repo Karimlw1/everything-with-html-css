@@ -60,7 +60,6 @@ header div button:hover{
     color: rgb(30, 63, 30);
     transition: opacity .8s ease, transform 4s ease;
     max-width: 480px;
-    height: 300px;
     text-align: center;
     margin-top: 200px;
 }
@@ -392,6 +391,9 @@ h1{
     .contact{
         font-size: 0.8rem;
 
+    }
+    .welcome-box[id="welcome"]{
+        height: 150px;
     }
 .images{   
     display: flex;
