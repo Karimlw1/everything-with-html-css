@@ -251,10 +251,10 @@ h2{
 
 section{
     display: grid;
-    grid-template-rows: repeat(auto-fit, minmax(200px, 1fr));
     gap: 1rem;
+    --max: 6;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
     margin-top: 50px;
-    width: max-content;
 }
 section div{
     width: max-content;
@@ -271,7 +271,7 @@ section div video{
 }
 @media (min-width: calc(200px * 6)) {
   .container {
-    grid-template-columns: repeat(var(6), 1fr);
+    grid-template-columns: repeat(var(--max), 1fr);
   }
 }
 
@@ -280,7 +280,6 @@ section div video{
     grid-template-columns: repeat(2, 1fr);
   }
 }
-
 @media (max-width: 900px) {
     .container {
         width: max-content;
