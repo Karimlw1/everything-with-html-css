@@ -8,6 +8,8 @@ body{
     background-position: 900px;
     background-repeat: repeat;
     background-size: cover;
+    display: flex;
+    align-content: center;
 }
 header{
     height:150px;
@@ -115,14 +117,12 @@ i{
         width: max-content;
         border:  solid 2px rgba(128, 128, 128, 0.322);
         margin-top: 10px;
-        margin-left: 20px;
         padding: 10px;
         border-radius: 10px;
         background: url("images/background.jpg");
         background-size: cover;
         cursor: default;
         user-select: none;
-        place-self: center;
       }
 strong  a{
     color: rgb(105, 36, 36);
@@ -253,6 +253,7 @@ section{
     --max: 6;
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
     margin-top: 50px;
+    justify-items: center;
 }
 
 /* optional card wrap */
