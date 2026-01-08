@@ -56,7 +56,7 @@
       <div class="container2">
         <div class="images">
           <img
-            src="https://raw.githubusercontent.com/Karimlw1/everything-with-html-css/main/images/download.jpg"
+            src="https://raw.githubusercontent.com/Karimlw1/alminaArt/main/images/download.jpg"
             alt=""
           />
           <img
@@ -121,6 +121,17 @@
         deviennent des moments à offrir.
       </p>
     </div>
+    <section class="closthes">
+      <div>
+
+      </div>
+      <div>
+
+      </div>
+      <div>
+        
+      </div>
+    </section>
 
     <script>
       window.addEventListener("load", () => {
@@ -129,12 +140,10 @@
       });
       window.addEventListener("scroll", () => {
         const box = document.querySelectorAll(".welcome-box")[0];
-        if (window.scrollY >= 100) {
+        if (window.scrollY >= 300) {
           box.classList.remove("visible");
         }
-        if (window.scrollY < 200) {
-          box.classList.add("visible");
-        } else {
+         else {
           box.classList.add("visible");
         }
       });
