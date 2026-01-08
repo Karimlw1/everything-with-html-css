@@ -247,7 +247,6 @@ h2{
   font-size: 1.1rem;
   opacity: 0.85;
 }
-
 section{
     display: grid;
     justify-content: center;
@@ -256,27 +255,34 @@ section{
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
     margin-top: 50px;
 }
+
+/* optional card wrap */
 section div{
     width: max-content;
     height: max-content;
 }
+
 section div img{
     height: 250px;
     width: 200px;
     border-radius: 10px;
 }
+
 section div video{
     height: 300px;
     width: 200px;
 }
+
+/* HARD CAP 6 columns */
 @media (min-width: calc(200px * 6)) {
-  .container {
+  section {
     grid-template-columns: repeat(var(--max), 1fr);
   }
 }
 
+/* MINIMUM always 2 columns */
 @media (max-width: calc(200px * 2)) {
-  .container {
+  section {
     grid-template-columns: repeat(2, 1fr);
   }
 }
