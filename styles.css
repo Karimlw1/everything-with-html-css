@@ -249,7 +249,6 @@ h2{
 }
 section{
     display: grid;
-    justify-content: center;
     gap: 1rem;
     --max: 6;
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
@@ -292,6 +291,10 @@ section div video{
         height: max-content;
         padding: 10px 10px 30px 10px;
     }
+    .container img{
+        height: 130px;
+        width: 130px;
+    }
     .container1 {
         flex-direction: column;
         gap: 40px;
@@ -331,6 +334,10 @@ section div video{
         width: 80%;
         height: 800px;
         padding: 10px;
+    }
+    .container img{
+        height: 100px;
+        width: 100px;
     }
     .container1 {
         flex-direction: column;
@@ -391,6 +398,10 @@ h1{
         width: 80%;
         height: max-content;
         padding: 0 20px 0 20px;
+    }
+    .container img{
+        height: 70px;
+        width: 70px;
     }
     .container1 {
         flex-direction: column;
