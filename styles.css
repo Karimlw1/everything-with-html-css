@@ -252,8 +252,9 @@ h2{
 section{
     display: flex;
     flex: auto;
-    align-content: space-evenly;
-    gap: 10px;
+    align-content: space-around;
+    margin-top: 50px;
+    gap: 50px;
     justify-content: center;
     flex-direction: row;
 }
