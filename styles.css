@@ -260,8 +260,8 @@ section div{
     height: max-content;
 }
 section div img{
-    height: 350px;
-    width: 250px;
+    height: 250px;
+    width: 150px;
     border-radius: 10px;
 }
 section div video{
