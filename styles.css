@@ -245,14 +245,14 @@ h2{
     flex-direction: row;
     justify-content: space-around;
     gap: 30px;
-    overflowy: visible;
+    overflow-y: visible;
 }
 .NosFleurs div{
     background-color: white;
-    border-radious: 20px;
+    border-radius: 20px;
     box-shadow: 1px 6px 8px rgba(255 ,255 ,255 ,0.8);
     height: 100%;
-    widht: 300px;
+    width: 300px;
 }
 .discounts{
     height:250px;
@@ -261,14 +261,14 @@ h2{
     flex-direction: row;
     justify-content: space-around;
     gap: 30px;
-    overflowy: visible;
+    overflow-y:visible;
 }
 .discounts div{
     background-color: white;
-    border-radious: 20px;
+    border-radius: 20px;
     box-shadow: 1px 6px 8px rgba(255 ,255 ,255 ,0.8);
     height: 100%;
-    widht: 300px;
+    width: 300px;
 }
 
 .hero-title {
