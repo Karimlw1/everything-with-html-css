@@ -245,7 +245,7 @@ h2{
     flex-direction: row;
     justify-content: space-around;
     gap: 30px;
-    overflow-y: scroll;
+    overflow-x: scroll;
 }
 .NosFleurs div{
     background-color: white;
