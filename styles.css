@@ -287,7 +287,7 @@ section div video{
 /* MINIMUM always 2 columns */
 @media (max-width: calc(200px * 2)) {
   section {
-     grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+     grid-template-columns: repeat(auto-fit, minmax(128px, 1fr));
   }
 }
 @media (max-width: 900px) {
