@@ -253,7 +253,7 @@ h2{
 }
 section{
     display: grid;
-    gap: 1rem;
+    gap:10px;
     --max: 6;
     grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
     margin-top: 50px;
