@@ -238,6 +238,38 @@ h2{
 .packet-img img{
     border-radius: 10px;
 }
+.NosFleurs{
+    height:250px;
+    width: max-content;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    gap: 30px;
+    overflowy: visible;
+}
+.NosFleurs div{
+    background-color: white;
+    border-radious: 20px;
+    box-shadow: 1px 6px 8px rgba(255 ,255 ,255 ,0.8);
+    height: 100%;
+    widht: 300px;
+}
+.discounts{
+    height:250px;
+    width: max-content;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    gap: 30px;
+    overflowy: visible;
+}
+.discounts div{
+    background-color: white;
+    border-radious: 20px;
+    box-shadow: 1px 6px 8px rgba(255 ,255 ,255 ,0.8);
+    height: 100%;
+    widht: 300px;
+}
 
 .hero-title {
   font-family: 'Playfair Display', serif;
