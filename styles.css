@@ -12,6 +12,7 @@ body{
     flex-wrap: inherit;
     flex-direction: column;
     align-content: center;
+    justify-content: center;
 }
 header{
     height:150px;
