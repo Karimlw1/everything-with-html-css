@@ -75,8 +75,7 @@ header div button:hover{
     background: url("https://raw.githubusercontent.com/Karimlw1/alminaArt/main/images/habitbg.jpg");
     padding: 2rem 3rem;
     border-radius: 12px;
-    margin-top: none;
-    box-shadow: 10px 0 6px 18px rgba(224, 224, 224, 0.8);
+    box-shadow:  0 -15px 18px rgba(187, 178, 219, 0.4);;
     color: rgb(240, 238, 238);
     transition: opacity .8s ease, transform 4s ease;
     max-width: 480px;
@@ -256,7 +255,7 @@ section{
     display: grid;
     gap:10px;
     --max: 6;
-    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
     margin-top: 50px;
     justify-items: center;
 }
@@ -288,7 +287,7 @@ section div video{
 /* MINIMUM always 2 columns */
 @media (max-width: calc(200px * 2)) {
   section {
-    grid-template-columns: repeat(2, 1fr);
+     grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
   }
 }
 @media (max-width: 900px) {
