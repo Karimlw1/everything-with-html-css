@@ -198,15 +198,6 @@
         box.classList.add("visible");
       });
       window.addEventListener("scroll", () => {
-        const box = document.querySelectorAll(".welcome-box")[0];
-        if (window.scrollY >= 300) {
-          box.classList.remove("visible");
-        }
-         else {
-          box.classList.add("visible");
-        }
-      });
-      window.addEventListener("scroll", () => {
         const box = document.querySelectorAll(".welcome-box")[1];
         if (window.scrollY >= 700) {
           box.classList.add("visible");
