@@ -133,6 +133,10 @@ header button:hover {
   transition: transform .3s, box-shadow .3s;
   animation: cardAppear .8s ease-out;
 }
+card img{
+    height: 100%;
+    width: 100%;
+}
 
 .card:hover {
   transform: translateY(-6px);
