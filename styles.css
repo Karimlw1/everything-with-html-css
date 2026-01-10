@@ -76,7 +76,7 @@ header div button:hover{
     padding: 2rem 3rem;
     border-radius: 12px;
     box-shadow: 0 6px 18px rgba(0,0,0,0.8);
-    color: rgb(230, 227, 227);
+    color: rgb(240, 238, 238);
     transition: opacity .8s ease, transform 4s ease;
     max-width: 480px;
     text-align: center;
