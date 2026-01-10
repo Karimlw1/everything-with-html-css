@@ -245,7 +245,7 @@ h2{
     flex-direction: row;
     justify-content: space-around;
     gap: 30px;
-    overflow-y: visible;
+    overflow-y: scroll;
 }
 .NosFleurs div{
     background-color: white;
@@ -261,7 +261,7 @@ h2{
     flex-direction: row;
     justify-content: space-around;
     gap: 30px;
-    overflow-y:visible;
+    overflow-y:scroll;
 }
 .discounts div{
     background-color: white;
