@@ -486,7 +486,7 @@ b{
   animation-timeline: --scroll;
 }
 section{
-    width: 410px;
+    margin-left:1%;
 }
 
 @keyframes fadeUp {
