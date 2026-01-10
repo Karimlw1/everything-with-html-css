@@ -255,7 +255,7 @@ section{
     display: grid;
     gap:10px;
     --max: 6;
-    grid-template-columns: repeat(auto-fit, minmax(108px, 108px));
+    grid-template-columns: repeat(auto-fit, minmax(1px, 190px));
     margin-top: 50px;
     justify-items: center;
 }
@@ -268,7 +268,7 @@ section div{
 
 section div img{
     height: 250px;
-    width: 200px;
+    width: 190px;
     border-radius: 5px;
 }
 
@@ -484,6 +484,9 @@ b{
   animation: fadeUp 1s both;
   view-timeline-name: --scroll;
   animation-timeline: --scroll;
+}
+section{
+    width: 410px;
 }
 
 @keyframes fadeUp {
