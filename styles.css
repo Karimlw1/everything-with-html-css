@@ -255,7 +255,7 @@ section{
     display: grid;
     gap:10px;
     --max: 6;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 200px));
+    grid-template-columns: repeat(auto-fit, minmax(108px, 108px));
     margin-top: 50px;
     justify-items: center;
 }
