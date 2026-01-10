@@ -75,7 +75,8 @@ header div button:hover{
     background: url("https://raw.githubusercontent.com/Karimlw1/alminaArt/main/images/habitbg.jpg");
     padding: 2rem 3rem;
     border-radius: 12px;
-    box-shadow: 0 6px 18px rgba(0,0,0,0.8);
+    margin-top: none;
+    box-shadow: 10px 0 6px 18px rgba(224, 224, 224, 0.8);
     color: rgb(240, 238, 238);
     transition: opacity .8s ease, transform 4s ease;
     max-width: 480px;
@@ -267,9 +268,9 @@ section div{
 }
 
 section div img{
-    height: 200px;
-    width: 150px;
-    border-radius: 10px;
+    height: 250px;
+    width: 200px;
+    border-radius: 5px;
 }
 
 section div video{
