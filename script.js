@@ -12,11 +12,11 @@ document.querySelectorAll(".rose_mixte span, .bouquets span").forEach(item => {
 });
 
 window.addEventListener("load", () => {
-    const box = document.querySelectorAll(".welcome-box");
+    const box = document.querySelector(".welcome-box");
     box.classList.add("visible");
   });
 window.addEventListener("scroll", () => {
-    const box = document.querySelectorAll(".welcome-box")[1];
+    const box = document.querySelector(".welcome-box");
     if (window.scrollY >= 500) {
       box.classList.add("visible");
     } else {
