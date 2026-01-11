@@ -5,16 +5,21 @@ html {
 }
 
 :root {
-  --bg: #faf8f7;
-  --text: #1e1e1e;
-  --primary: #c91d42; /* Rouge chic */
-  --accent: #b69d74; /* Doré mat */
-  --white: #fff;
-  --border: rgba(0,0,0,0.08);
-  --radius: 12px;
-  --shadow: 0 4px 14px rgba(0,0,0,0.08);
+  --bg: #faf9f9;
+  --card-bg: #ffffff;
+  --primary: #C02739;
+  --primary-light: #e25a69;
+  --accent: #111;
+  --text-soft: #555;
+  --radius-l: 18px;
+  --radius-m: 12px;
+  --radius-s: 6px;
+  --shadow-soft: 0 4px 14px rgba(0,0,0,0.08);
+  --shadow-medium: 0 8px 24px rgba(0,0,0,0.12);
+  --transition: 0.35s cubic-bezier(0.33, 1, 0.68, 1);
+  --font-heading: "Playfair Display", serif;
+  --font-body: "Inter", sans-serif;
 }
-
 body {
   font-family: 'Montserrat', sans-serif;
   background: url("https://images.unsplash.com/photo-1518931479438-62470470be9a?q=80&w=1412&auto=format&fit=crop");
@@ -23,6 +28,8 @@ body {
   background-position: center;
   margin: 0;
   padding: 0;
+  line-height: 1.45;
+  -webkit-font-smoothing: antialiased;
 }
 
 header {
@@ -222,144 +229,254 @@ header button:hover {
 
 /* CONTACT + PRICING */
 
-/* Container principal */
-.info-section {
-  max-width: 1200px;
-  margin: 60px auto;
-  padding: 0 20px;
-  display: grid;
-  grid-template-columns: 1fr 1.2fr;
-  gap: 40px;
+/* ========================
+   PREMIUM VARIABLES
+======================== */
+:root {
+  --bg: #faf9f9;
+  --card-bg: #ffffff;
+  --primary: #C02739;
+  --primary-light: #e25a69;
+  --accent: #111;
+  --text-soft: #555;
+  --radius-l: 18px;
+  --radius-m: 12px;
+  --radius-s: 6px;
+  --shadow-soft: 0 4px 14px rgba(0,0,0,0.08);
+  --shadow-medium: 0 8px 24px rgba(0,0,0,0.12);
+  --transition: 0.35s cubic-bezier(0.33, 1, 0.68, 1);
+  --font-heading: "Playfair Display", serif;
+  --font-body: "Inter", sans-serif;
 }
 
-/* Brand block */
+/* ========================
+   GLOBAL RESET + BODY
+======================== */
+body {
+  margin: 0;
+  font-family: var(--font-body);
+  background: var(--bg);
+  color: var(--accent);
+  line-height: 1.45;
+  -webkit-font-smoothing: antialiased;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+  object-fit: cover;
+}
+
+/* ========================
+   WRAPPER SECTION
+======================== */
+.info-section {
+  width: min(1200px, 95vw);
+  margin: 60px auto;
+  display: grid;
+  gap: 40px;
+  grid-template-columns: 1fr 1.1fr;
+  align-items: start;
+}
+
+/* ========================
+   BRAND & CONTACT CARD
+======================== */
 .brand-block {
-  background: var(--white);
+  background: var(--card-bg);
   padding: 28px;
-  border-radius: var(--radius);
-  border: 1px solid var(--border);
-  box-shadow: var(--shadow);
+  border-radius: var(--radius-l);
+  box-shadow: var(--shadow-soft);
   display: flex;
   flex-direction: column;
-  gap: 20px;
-  animation: fadeUp 0.7s ease forwards;
+  gap: 22px;
+  transition: var(--transition);
+}
+
+.brand-block:hover {
+  box-shadow: var(--shadow-medium);
+  transform: translateY(-3px);
 }
 
 .brand-logo img {
   width: 130px;
-  border-radius: var(--radius);
+  border-radius: var(--radius-m);
 }
 
 /* Contact */
 .contact-block h3 {
+  font-family: var(--font-heading);
+  font-size: 1.4rem;
   font-weight: 600;
-  margin-bottom: 10px;
   color: var(--primary);
+  margin-bottom: 10px;
 }
 
 .contact-block ul {
   list-style: none;
+  margin: 0;
   padding: 0;
 }
 
 .contact-block li {
-  margin-bottom: 6px;
+  padding: 6px 0;
+  font-size: 0.95rem;
+  color: var(--text-soft);
 }
 
 .contact-block a {
+  color: var(--accent);
   text-decoration: none;
-  color: var(--primary);
   font-weight: 500;
+  transition: var(--transition);
 }
 
-/* Tarif Block */
+.contact-block a:hover {
+  color: var(--primary);
+}
+
+/* ========================
+   TARIF + IMAGES SECTION
+======================== */
 .tarif-block {
-  background: var(--white);
-  border-radius: var(--radius);
-  border: 1px solid var(--border);
-  box-shadow: var(--shadow);
-  padding: 28px;
-  animation: fadeUp 1.2s ease forwards;
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
 }
 
-/* Images row */
+/* Image Row */
 .image-row {
-  display: flex;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
   gap: 14px;
 }
 
 .image-row img {
-  width: 100%;
-  border-radius: var(--radius);
-  object-fit: cover;
+  border-radius: var(--radius-m);
+  height: 160px;
+  transition: var(--transition);
+  box-shadow: var(--shadow-soft);
 }
 
-/* Pricing */
+.image-row img:hover {
+  transform: scale(1.04);
+  box-shadow: var(--shadow-medium);
+}
+
+/* Pricing Card */
+.pricing {
+  background: var(--card-bg);
+  padding: 30px;
+  border-radius: var(--radius-l);
+  box-shadow: var(--shadow-soft);
+  transition: var(--transition);
+  position: relative;
+}
+
+.pricing:hover {
+  box-shadow: var(--shadow-medium);
+  transform: translateY(-3px);
+}
+
 .pricing h1 {
-  font-size: 28px;
+  font-family: var(--font-heading);
+  font-size: 1.9rem;
   color: var(--primary);
-  margin: 20px 0 10px;
-  border-bottom: 2px solid var(--accent);
-  display: inline-block;
+  margin-bottom: 18px;
+  font-weight: 700;
 }
 
-.bouquets, .rose_mixte {
-  margin-top: 14px;
-}
-
-.bouquets h2, .rose_mixte h2 {
-  color: var(--accent);
-  margin-bottom: 10px;
-}
-
-.bouquets span, .rose_mixte span {
-  display: block;
-  padding: 6px 0;
-  border-bottom: 1px dashed var(--border);
-}
-
-/* Second Gallery */
-.images2 {
-  max-width: 1200px;
+/* Groups */
+.bouquets,
+.rose_mixte {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(240px,1fr));
-  margin: 40px auto;
-  gap: 20px;
-  padding: 0 20px;
+  gap: 6px;
+  margin-bottom: 20px;
+}
+
+.bouquets h2,
+.rose_mixte h2 {
+  font-family: var(--font-heading);
+  font-size: 1.3rem;
+  margin: 12px 0 6px;
+  color: var(--accent);
+}
+
+span {
+  font-size: 0.95rem;
+  color: var(--text-soft);
+}
+
+/* ========================
+   EXTRA IMAGE STRIP
+======================== */
+.images2 {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 16px;
+  width: min(1200px, 95vw);
+  margin: auto;
 }
 
 .images2 img {
-  width: 100%;
-  border-radius: var(--radius);
-  box-shadow: var(--shadow);
+  border-radius: var(--radius-m);
+  height: 180px;
   object-fit: cover;
-  transition: transform 0.4s cubic-bezier(.22, .61, .36, 1);
+  transition: var(--transition);
+  box-shadow: var(--shadow-soft);
 }
 
 .images2 img:hover {
-  transform: scale(1.05);
+  transform: translateY(-5px);
+  box-shadow: var(--shadow-medium);
 }
 
-/* Animations */
-@keyframes fadeUp {
-  from { opacity: 0; transform: translateY(14px); }
-  to { opacity: 1; transform: translateY(0); }
+/* ========================
+   MICRO ANIMATIONS
+======================== */
+@media (prefers-reduced-motion: no-preference) {
+  .pricing,
+  .brand-block,
+  .image-row img,
+  .images2 img {
+    animation: fadeInUp 0.7s ease forwards;
+    opacity: 0;
+  }
 }
 
-/* Responsive */
-@media(max-width: 900px) {
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(14px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* ========================
+   RESPONSIVE BREAKPOINTS
+======================== */
+@media (max-width: 980px) {
   .info-section {
     grid-template-columns: 1fr;
   }
 }
 
-@media(max-width: 500px) {
-  .pricing h1 {
-    font-size: 22px;
+@media (max-width: 620px) {
+  .image-row,
+  .images2 {
+    grid-template-columns: repeat(2,1fr);
   }
 }
 
-
+@media (max-width: 460px) {
+  .image-row,
+  .images2 {
+    grid-template-columns: 1fr;
+  }
+}
 
 /* FLEURS SECTION */
 .NosFleurs {
