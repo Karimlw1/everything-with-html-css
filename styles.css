@@ -248,13 +248,14 @@ header button:hover {
 ======================== */
 .brand-block {
   background: var(--card-bg);
-  padding: 28px;
+  padding: 2px;
   border-radius: var(--radius-l);
   box-shadow: var(--shadow-soft);
   display: flex;
   flex-direction: column;
   gap: 22px;
   transition: var(--transition);
+  max-width: 700px;
 }
 
 .brand-block:hover {
@@ -271,7 +272,7 @@ header button:hover {
 .contact-block h3 {
   font-family: var(--font-heading);
   font-size: 1.4rem;
-  font-weight: 600;
+  font-weight: 60;
   color: var(--primary);
   margin-bottom: 10px;
 }
@@ -306,6 +307,7 @@ header button:hover {
   display: flex;
   flex-direction: column;
   gap: 32px;
+  width: 500px;
 }
 
 /* Image Row */
@@ -616,6 +618,8 @@ span {
 /* GALLERIES */
 .cards-container {
   scroll-snap-type: x proximity;
+  overflow-y: hidden;
+  height: 200px;
 }
 .NosFleurs {
   scroll-snap-type: x mandatory;
