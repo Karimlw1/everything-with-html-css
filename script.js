@@ -10,14 +10,10 @@ document.querySelectorAll(".rose_mixte span, .bouquets span").forEach(item => {
     item.style.fontWeight = "400";
   });
 });
-
-window.addEventListener("load", () => {
-    const box = document.querySelector(".welcome-box");
-    box.classList.add("visible");
-  });
+  
 window.addEventListener("scroll", () => {
     const box = document.querySelector(".welcome-box");
-    if (window.scrollY >= 500) {
+    if (window.scrollY >= 800) {
       box.classList.add("visible");
     } else {
         box.classList.remove("visible");

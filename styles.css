@@ -198,21 +198,18 @@ header button:hover {
   transform: translateY(20px);
   transition: opacity .8s ease, transform .8s ease;
   max-width: 500px;
-  margin: 160px auto 40px auto;
+  margin: 50px auto 30px auto;
   padding: 24px 32px;
   border-radius: 12px;
   text-align: center;
   backdrop-filter: blur(4px);
+  background: url("https://raw.githubusercontent.com/Karimlw1/alminaArt/main/images/habitbg.jpg") center/cover;
+  color: white;
 }
 
 .welcome-box.visible {
   opacity: 1;
   transform: translateY(0);
-}
-
-#welcome2 {
-  background: url("https://raw.githubusercontent.com/Karimlw1/alminaArt/main/images/habitbg.jpg") center/cover;
-  color: white;
 }
 
 .hero-title {
