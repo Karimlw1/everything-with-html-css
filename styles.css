@@ -230,42 +230,8 @@ header button:hover {
 /* CONTACT + PRICING */
 
 /* ========================
-   PREMIUM VARIABLES
-======================== */
-:root {
-  --bg: #faf9f9;
-  --card-bg: #ffffff;
-  --primary: #C02739;
-  --primary-light: #e25a69;
-  --accent: #111;
-  --text-soft: #555;
-  --radius-l: 18px;
-  --radius-m: 12px;
-  --radius-s: 6px;
-  --shadow-soft: 0 4px 14px rgba(0,0,0,0.08);
-  --shadow-medium: 0 8px 24px rgba(0,0,0,0.12);
-  --transition: 0.35s cubic-bezier(0.33, 1, 0.68, 1);
-  --font-heading: "Playfair Display", serif;
-  --font-body: "Inter", sans-serif;
-}
-
-/* ========================
    GLOBAL RESET + BODY
 ======================== */
-body {
-  margin: 0;
-  font-family: var(--font-body);
-  background: var(--bg);
-  color: var(--accent);
-  line-height: 1.45;
-  -webkit-font-smoothing: antialiased;
-}
-
-img {
-  max-width: 100%;
-  display: block;
-  object-fit: cover;
-}
 
 /* ========================
    WRAPPER SECTION
@@ -277,6 +243,11 @@ img {
   gap: 40px;
   grid-template-columns: 1fr 1.1fr;
   align-items: start;
+}
+.info-section img{
+  max-width: 100%;
+  display: block;
+  object-fit: cover;
 }
 
 /* ========================
