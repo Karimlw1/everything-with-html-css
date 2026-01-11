@@ -292,7 +292,9 @@ header button:hover {
   padding: 20px;
   scroll-snap-type: x mandatory;
 }
-
+.NosFleurs::-webkit-scrollbar {
+  display: none;
+}
 .NosFleurs div {
   height: 260px;
   background: white;
@@ -306,6 +308,7 @@ header button:hover {
   border-radius: 10px;
   scroll-snap-type: mandatory;
 }
+
 
 /* HABITS GRID */
 .closthes {
