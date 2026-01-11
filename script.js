@@ -1,25 +1,27 @@
-document.querySelectorAll(".rose_mixte span, .bouquets span").forEach(item => {
-  item.addEventListener("mouseenter", () => {
-    item.style.color = "var(--primary)";
-    item.style.fontWeight = "600";
-    item.style.transition = "0.3s ease";
-  });
+/* SCROLL REVEAL */
+const reveals = document.querySelectorAll('.reveal, .card, .images2 img, .NosFleurs div, .info-section, .discounts');
 
-  item.addEventListener("mouseleave", () => {
-    item.style.color = "inherit";
-    item.style.fontWeight = "400";
+const revealOnScroll = () => {
+  const trigger = window.innerHeight * 0.82;
+  reveals.forEach(el => {
+    const pos = el.getBoundingClientRect().top;
+    if (pos < trigger) el.classList.add('active');
   });
+};
+window.addEventListener('scroll', revealOnScroll);
+revealOnScroll();
+
+/* PARALLAX HERO */
+window.addEventListener('mousemove', e => {
+  const x = (e.clientX / window.innerWidth - .5) * 8;
+  const y = (e.clientY / window.innerHeight - .5) * 8;
+  document.querySelector('.hero-content').style.transform = `translate(${x}px, ${y}px)`;
 });
 
-window.addEventListener("load", () => {
-    const box = document.querySelectorAll(".welcome-box");
-    box.classList.add("visible");
-  });
-window.addEventListener("scroll", () => {
-    const box = document.querySelectorAll(".welcome-box")[1];
-    if (window.scrollY >= 500) {
-      box.classList.add("visible");
-    } else {
-        box.classList.remove("visible");
-        }
+/* CTA CLICK FEEDBACK */
+document.querySelector('.cta')?.addEventListener('mousedown', (e) => {
+  e.target.style.transform = 'scale(.94)';
+});
+document.querySelector('.cta')?.addEventListener('mouseup', (e) => {
+  e.target.style.transform = 'scale(1)';
 });

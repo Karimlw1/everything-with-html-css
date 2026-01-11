@@ -468,3 +468,106 @@ header button:hover {
     grid-auto-columns: 160px;
   }
 }
+/* PALETTE GLOBALE AMÉLIORÉE */
+:root {
+  --primary: #c51f3d;
+  --accent: #d4b47e;
+  --dark: #141313;
+  --soft: #faf8f7;
+  --white: #ffffff;
+  --shadow-xl: 0 8px 30px rgba(0,0,0,.13);
+}
+
+/* HOVERS PREMIUM */
+.card:hover img,
+.images2 img:hover,
+.NosFleurs div:hover img {
+  filter: brightness(1.12) contrast(1.05);
+}
+
+/* GLOW SUBTIL */
+.card:hover {
+  box-shadow: var(--shadow-xl);
+}
+
+/* SUBTLE PARALLAX SUR LA HERO */
+.hero {
+  position: relative;
+  overflow: hidden;
+  background: linear-gradient(135deg, #aa192f 0%, #6d3013 100%);
+}
+.hero-content {
+  will-change: transform;
+  transform: translateZ(0);
+}
+
+/* CTA PREMIUM */
+.cta {
+  background: var(--accent);
+  color: var(--dark);
+  font-weight: 600;
+}
+.cta:hover {
+  letter-spacing: .5px;
+}
+
+/* CTA SCROLL PULSE */
+.cta {
+  animation: pulseIn 1.6s infinite ease-in-out;
+}
+@keyframes pulseIn {
+  0% { transform: scale(1); }
+  50% { transform: scale(1.06); }
+  100% { transform: scale(1); }
+}
+
+/* SCROLL REVEAL (via JS) */
+.reveal {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: .7s cubic-bezier(.22,.61,.36,1);
+}
+.reveal.active {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* GALLERIES */
+.cards-container {
+  scroll-snap-type: x proximity;
+}
+.NosFleurs {
+  scroll-snap-type: x mandatory;
+}
+
+/* DISCOUNTS */
+.discounts {
+  width: 95%;
+  max-width: 1100px;
+  margin: 30px auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(210px, 1fr));
+  gap: 18px;
+}
+.discounts div {
+  background: var(--primary);
+  color: var(--white);
+  padding: 18px;
+  border-radius: 12px;
+  text-align: center;
+  font-weight: 600;
+  box-shadow: 0 4px 14px rgba(0,0,0,.15);
+  transition: .3s;
+}
+.discounts div:hover {
+  transform: translateY(-6px);
+  box-shadow: var(--shadow-xl);
+}
+.discounts button {
+  margin-top: 8px;
+  background: var(--accent);
+  border: none;
+  padding: 8px 12px;
+  border-radius: 8px;
+  cursor: pointer;
+}
