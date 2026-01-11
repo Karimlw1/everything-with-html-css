@@ -13,7 +13,7 @@ document.querySelectorAll(".rose_mixte span, .bouquets span").forEach(item => {
   
 window.addEventListener("scroll", () => {
     const box = document.querySelector(".welcome-box");
-    if (window.scrollY >= 1850) {
+    if (window.scrollY >= 1500) {
       box.classList.add("visible");
     } else {
         box.classList.remove("visible");
