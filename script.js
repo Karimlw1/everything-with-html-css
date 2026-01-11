@@ -17,7 +17,7 @@ window.addEventListener("load", () => {
   });
 window.addEventListener("scroll", () => {
     const box = document.querySelector(".welcome-box");
-    if (window.scrollY >= 700) {
+    if (window.scrollY >= 1000) {
       box.classList.add("visible");
     } else {
         box.classList.remove("visible");
