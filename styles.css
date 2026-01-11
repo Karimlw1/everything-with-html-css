@@ -4,6 +4,17 @@ html {
   scroll-behavior: smooth;
 }
 
+:root {
+  --bg: #faf8f7;
+  --text: #1e1e1e;
+  --primary: #c91d42; /* Rouge chic */
+  --accent: #b69d74; /* Doré mat */
+  --white: #fff;
+  --border: rgba(0,0,0,0.08);
+  --radius: 12px;
+  --shadow: 0 4px 14px rgba(0,0,0,0.08);
+}
+
 body {
   font-family: 'Montserrat', sans-serif;
   background: url("https://images.unsplash.com/photo-1518931479438-62470470be9a?q=80&w=1412&auto=format&fit=crop");
@@ -211,154 +222,144 @@ header button:hover {
 
 /* CONTACT + PRICING */
 
-/* MAIN WRAPPER */
-.container {
-  width: 100%;
-  max-width: 1100px;
+/* Container principal */
+.info-section {
+  max-width: 1200px;
+  margin: 60px auto;
+  padding: 0 20px;
+  display: grid;
+  grid-template-columns: 1fr 1.2fr;
+  gap: 40px;
+}
+
+/* Brand block */
+.brand-block {
+  background: var(--white);
+  padding: 28px;
+  border-radius: var(--radius);
+  border: 1px solid var(--border);
+  box-shadow: var(--shadow);
   display: flex;
+  flex-direction: column;
   gap: 20px;
-  padding: 25px;
-  border-radius: var(--radius);
-  backdrop-filter: var(--blur);
-  background: var(--glass);
-  box-shadow: var(--shadow);
-  animation: fadeIn 1s ease-out;
+  animation: fadeUp 0.7s ease forwards;
 }
 
-/* LEFT SIDE */
-.container1 {
-  flex: 1;
-  display: flex;
-  flex-direction: column;
-  gap: 25px;
-  justify-content: center;
-  padding: 20px;
-  backdrop-filter: var(--blur);
-  background: rgba(255,255,255,0.25);
-  border-radius: var(--radius);
-  box-shadow: inset 0 0 18px rgba(255,255,255,0.4);
-  animation: rise 1s ease-out;
-}
-
-.container_logo img {
+.brand-logo img {
   width: 130px;
-  height: auto;
-  border-radius: 100px;
-  object-fit: cover;
-  box-shadow: 0 5px 12px rgba(0,0,0,0.15);
-  transition: .3s;
+  border-radius: var(--radius);
 }
 
-.container_logo img:hover {
-  transform: rotate(2deg) scale(1.05);
-}
-
-/* CONTACT */
-.contact {
-  text-align: center;
-  font-size: .95rem;
-  color: var(--accent2);
-  line-height: 1.45rem;
-  animation: fadeUp .8s ease-out;
-}
-
-.contact h3 {
-  color: var(--accent);
-  font-size: 1.2rem;
+/* Contact */
+.contact-block h3 {
   font-weight: 600;
+  margin-bottom: 10px;
+  color: var(--primary);
 }
 
-.contact a {
-  color: var(--accent);
-  font-weight: 600;
+.contact-block ul {
+  list-style: none;
+  padding: 0;
+}
+
+.contact-block li {
+  margin-bottom: 6px;
+}
+
+.contact-block a {
   text-decoration: none;
+  color: var(--primary);
+  font-weight: 500;
 }
 
-.contact a:hover {
-  text-decoration: underline;
+/* Tarif Block */
+.tarif-block {
+  background: var(--white);
+  border-radius: var(--radius);
+  border: 1px solid var(--border);
+  box-shadow: var(--shadow);
+  padding: 28px;
+  animation: fadeUp 1.2s ease forwards;
 }
 
-/* RIGHT SIDE */
-.container2 {
-  flex: 1.6;
+/* Images row */
+.image-row {
   display: flex;
-  flex-direction: column;
-  gap: 25px;
-  padding: 20px;
+  gap: 14px;
 }
 
-/* IMAGES */
-.images {
-  display: flex;
-  gap: 12px;
+.image-row img {
   width: 100%;
-}
-
-.images img {
-  flex: 1;
-  height: 170px;
   border-radius: var(--radius);
   object-fit: cover;
-  box-shadow: var(--shadow);
-  animation: fadeUp .9s ease-out;
-  transition: .4s;
 }
 
-.images img:hover {
-  transform: scale(1.05);
+/* Pricing */
+.pricing h1 {
+  font-size: 28px;
+  color: var(--primary);
+  margin: 20px 0 10px;
+  border-bottom: 2px solid var(--accent);
+  display: inline-block;
 }
 
-/* TARIF SECTION */
-.tarif {
-  backdrop-filter: blur(10px);
-  background: rgba(255,255,255,0.3);
-  padding: 20px;
-  border-radius: var(--radius);
-  box-shadow: var(--shadow);
-  animation: fadeUp 1.05s ease;
+.bouquets, .rose_mixte {
+  margin-top: 14px;
 }
 
-.tarif h1 {
-  font-size: 1.6rem;
+.bouquets h2, .rose_mixte h2 {
   color: var(--accent);
-  text-align: center;
   margin-bottom: 10px;
 }
 
-.bouquets,
-.rose_mixte {
-  padding: 10px;
-  font-size: 1rem;
-  color: var(--accent2);
-  line-height: 1.5rem;
+.bouquets span, .rose_mixte span {
+  display: block;
+  padding: 6px 0;
+  border-bottom: 1px dashed var(--border);
 }
 
-/* ANIMATIONS */
-@keyframes fadeIn {
-  from { opacity:0; transform: scale(.97) }
-  to { opacity:1; transform: scale(1) }
+/* Second Gallery */
+.images2 {
+  max-width: 1200px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px,1fr));
+  margin: 40px auto;
+  gap: 20px;
+  padding: 0 20px;
 }
 
+.images2 img {
+  width: 100%;
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+  object-fit: cover;
+  transition: transform 0.4s cubic-bezier(.22, .61, .36, 1);
+}
+
+.images2 img:hover {
+  transform: scale(1.05);
+}
+
+/* Animations */
 @keyframes fadeUp {
-  from { opacity:0; transform: translateY(15px) }
-  to { opacity:1; transform: translateY(0) }
+  from { opacity: 0; transform: translateY(14px); }
+  to { opacity: 1; transform: translateY(0); }
 }
 
-@keyframes rise {
-  from { opacity:0; transform: translateY(20px) }
-  to { opacity:1; transform: translateY(0) }
-}
-
-/* RESPONSIVE */
-@media(max-width: 850px) {
-  .container {
-    flex-direction: column;
-  }
-
-  .images {
-    height: auto;
+/* Responsive */
+@media(max-width: 900px) {
+  .info-section {
+    grid-template-columns: 1fr;
   }
 }
+
+@media(max-width: 500px) {
+  .pricing h1 {
+    font-size: 22px;
+  }
+}
+
+
 
 /* FLEURS SECTION */
 .NosFleurs {
