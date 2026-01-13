@@ -12,13 +12,16 @@ document.querySelectorAll(".rose_mixte span, .bouquets span").forEach(item => {
 });
   
 window.addEventListener("scroll", () => {
-    const box = document.querySelector(".welcome-box");
-    if (window.scrollY >= 1500) {
+  document.querySelectorAll(".welcome-box").forEach(box => {
+    const rect = box.getBoundingClientRect();
+    if (rect.top < window.innerHeight - 100) {
       box.classList.add("visible");
     } else {
-        box.classList.remove("visible");
-        }
+      box.classList.remove("visible");
+    }
+  });
 });
+
 
 /* SCROLL REVEAL */
 const reveals = document.querySelectorAll('.reveal, .card, .images2 img, .NosFleurs div, .info-section, .discounts');
@@ -47,3 +50,4 @@ document.querySelector('.cta')?.addEventListener('mousedown', (e) => {
 document.querySelector('.cta')?.addEventListener('mouseup', (e) => {
   e.target.style.transform = 'scale(1)';
 });
+
