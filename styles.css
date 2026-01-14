@@ -134,6 +134,7 @@ header button:hover {
   gap: 20px;
   overflow-x: auto;
   padding: 15px;
+  margin-left: 70px;
   scroll-snap-type: x mandatory;
 }
 
@@ -230,7 +231,7 @@ header button:hover {
    WRAPPER SECTION
 ======================== */
 .info-section {
-  width: min(1200px, 95vw);
+  width: min(60%, 95vw);
   margin: 60px auto;
   display: grid;
   gap: 40px;
@@ -307,6 +308,7 @@ header button:hover {
   flex-direction: column;
   gap: 32px;
   width: inherit;
+  transition: all ease-in-out ;
 }
 
 /* Image Row */
