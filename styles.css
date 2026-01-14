@@ -426,7 +426,9 @@ span {
 ======================== */
 @media (max-width: 980px) { 
   .info-section {
-    grid-template-columns: 3fr;
+    align-self: center;
+    width: min(1200px, 95vw);
+  }
   .brand-block{
     display: none;
 }
