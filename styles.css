@@ -234,8 +234,7 @@ header button:hover {
   margin: 60px auto;
   display: grid;
   gap: 40px;
-  grid-template-columns: 1fr 1.1fr;
-  align-items: start;
+  grid-template-columns: 600px 1.1fr;
 }
 .info-section img{
   max-width: 100%;
@@ -320,6 +319,7 @@ header button:hover {
 .image-row img {
   border-radius: var(--radius-m);
   height: 160px;
+  width: 100%;
   transition: var(--transition);
   box-shadow: var(--shadow-soft);
 }
@@ -458,7 +458,7 @@ span {
   display: none;
 }
 .NosFleurs div {
-  height: 260px;
+  height: 280px;
   background: white;
   border-radius: 10px;
   box-shadow: 0 4px 10px rgba(0,0,0,.15);
@@ -468,7 +468,6 @@ span {
   height: 100%;
   width: 100%;
   border-radius: 10px;
-  scroll-snap-type: mandatory;
 }
 
 
@@ -634,6 +633,9 @@ span {
   grid-template-columns: repeat(auto-fit, minmax(210px, 1fr));
   gap: 18px;
 }
+.discounts ::-webkit-scrollbar{
+  display: none;
+}
 .discounts div {
   background: var(--primary);
   color: var(--white);
@@ -644,6 +646,7 @@ span {
   box-shadow: 0 4px 14px rgba(0,0,0,.15);
   transition: .3s;
 }
+
 .discounts div:hover {
   transform: translateY(-6px);
   box-shadow: var(--shadow-xl);
