@@ -306,7 +306,7 @@ header button:hover {
   display: flex;
   flex-direction: column;
   gap: 32px;
-  width: 500px;
+  width: inherit;
 }
 
 /* Image Row */
