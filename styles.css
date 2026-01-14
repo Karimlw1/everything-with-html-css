@@ -424,11 +424,6 @@ span {
 /* ========================
    RESPONSIVE BREAKPOINTS
 ======================== */
-@media (max-width: 980px) {
-  .info-section {
-    grid-template-columns: 1fr;
-  }
-}
 
 @media (max-width: 620px) {
   .image-row,
