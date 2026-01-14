@@ -231,7 +231,7 @@ header button:hover {
    WRAPPER SECTION
 ======================== */
 .info-section {
-  width: min(60%, 95vw);
+  width: min(85%, 95vw);
   margin: 60px auto;
   display: grid;
   gap: 40px;
